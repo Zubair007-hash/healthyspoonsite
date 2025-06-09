@@ -32,6 +32,8 @@ const MenuSection = () => {
       badgeColor: "bg-green-100 text-green-800",
       items: [
         { name: "Egg Khichuri (ডিম খিচুড়ি)", description: "Comfort rice with egg", price: "৳60" },
+        { name: "Lunch Box 1 (Egg)", description: "A comforting bowl of Bhoona Khichuri with a boiled egg.", price: "৳60" },
+        { name: "Lunch Box 2 (Veg)", description: "Plain Rice, Daal, two Bhortas, and a Vegetable Bhaji.", price: "৳60" },
         { name: "Mini Biryani (মিনি বিরিয়ানি)", description: "Aromatic rice with chicken", price: "৳80" }
       ]
     },
