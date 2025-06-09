@@ -8,9 +8,9 @@ const MenuSection = () => {
       title: "Daily Snacks & Tiffin",
       color: "bg-green-100 text-green-800",
       items: [
-        { name: "Singara (সিঙাড়া)", description: "Classic potato-filled pastry. A student favourite.", price: "Tk 8" },
-        { name: "Samucha (সামুচা)", description: "Crispy, savoury pastry with a vegetable or lentil filling.", price: "Tk 8" },
-        { name: "Alur Chop (আলুর চপ)", description: "Spiced mashed potato ball, coated in besan and fried.", price: "Tk 12" },
+        { name: "Singara (সিঙাড়া)", description: "Classic potato-filled pastry. A student favourite.", price: "Tk 10" },
+        { name: "Samucha (সামুচা)", description: "Crispy, savoury pastry with a vegetable or lentil filling.", price: "Tk 10" },
+        { name: "Alur Chop (আলুর চপ)", description: "Spiced mashed potato ball, coated in besan and fried.", price: "Tk 10" },
         { name: "Puri Plate (পুরি প্লেট)", description: "2 pieces of Daal or Aloo Puri with a bit of chutney or bhaji.", price: "Tk 15" }
       ]
     },
@@ -18,7 +18,7 @@ const MenuSection = () => {
       title: "Street Food",
       color: "bg-orange-100 text-orange-800",
       items: [
-        { name: "Fuchka / Chotpoti (ফুচকা / চটপটি)", description: "The ultimate street food snack, served fresh to order.", price: "Tk 35" },
+        { name: "Fuchka / Chotpoti (ফুচকা / চটপটি)", description: "The ultimate street food snack, served fresh to order.", price: "Tk 40" },
         { name: "Spicy Fried Chicken (মশলা ফ্রাইড চিকেন)", description: "One piece of crispy, juicy chicken with a 'desi' spice blend.", price: "Tk 40" }
       ]
     },
@@ -34,8 +34,8 @@ const MenuSection = () => {
       title: "Weekly Specials",
       color: "bg-purple-100 text-purple-800",
       items: [
-        { name: "(Mon) Egg Khichuri (ডিম খিচুড়ি)", description: "A comforting bowl of Bhoona Khichuri with a boiled egg.", price: "Tk 55" },
-        { name: "(Wed) Mini Biryani (মিনি বিরিয়ানি)", description: "A special portion of Chicken Biryani with one piece of chicken.", price: "Tk 75" }
+        { name: "(Mon) Egg Khichuri (ডিম খিচুড়ি)", description: "A comforting bowl of Bhoona Khichuri with a boiled egg.", price: "Tk 60" },
+        { name: "(Wed) Mini Biryani (মিনি বিরিয়ানি)", description: "A special portion of Chicken Biryani with one piece of chicken.", price: "Tk 80" }
       ]
     },
     {
@@ -49,9 +49,9 @@ const MenuSection = () => {
       title: "Drinks",
       color: "bg-cyan-100 text-cyan-800",
       items: [
-        { name: "Lassi (লাচ্ছি)", description: "A glass of sweet yogurt lassi, a Bogura classic.", price: "Tk 25" },
-        { name: "Mineral Water (পানি)", description: "500ml Bottle", price: "Tk 15" },
-        { name: "Soft Drinks (কোল্ড ড্রিংক্স)", description: "250ml Bottle (Coke, Pepsi, etc.)", price: "Tk 25" }
+        { name: "Lassi (লাচ্ছি)", description: "A glass of sweet yogurt lassi, a Bogura classic.", price: "Tk 30" },
+        { name: "Mineral Water (পানি)", description: "500ml Bottle", price: "MRP" },
+        { name: "Soft Drinks (কোল্ড ড্রিংক্স)", description: "250ml Bottle (Coke, Pepsi, etc.)", price: "MRP" }
       ]
     }
   ];

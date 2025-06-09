@@ -19,7 +19,10 @@ const Hero = () => {
             Quality Food Service for 
             <span className="text-green-600"> Schools & Events</span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 mb-4 leading-relaxed max-w-3xl mx-auto">
+            <strong>Crafted with Love, Served with Care</strong>
+          </p>
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
             From traditional Bengali snacks to full meals, we provide fresh, delicious, and 
             affordable food solutions for in-school canteens and special events in Bogura.
           </p>

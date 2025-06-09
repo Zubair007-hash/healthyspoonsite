@@ -16,7 +16,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Utensils className="h-8 w-8 text-green-600" />
-              <h1 className="text-2xl font-bold text-gray-800">Bogura Food Supply</h1>
+              <h1 className="text-2xl font-bold text-gray-800">Healthy Spoon</h1>
             </div>
             <div className="hidden md:flex space-x-6">
               <a href="#home" className="text-gray-600 hover:text-green-600 transition-colors">Home</a>
@@ -51,11 +51,11 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Utensils className="h-6 w-6 text-green-400" />
-                <h3 className="text-xl font-bold">Bogura Food Supply</h3>
+                <h3 className="text-xl font-bold">Healthy Spoon</h3>
               </div>
               <p className="text-gray-300">
-                Quality food service for schools and events in Bogura, Bangladesh. 
-                Fresh, delicious, and affordable meals for every occasion.
+                Crafted with Love, Served with Care. Quality food service for schools 
+                and events in Bogura, Bangladesh. Fresh, delicious, and affordable meals for every occasion.
               </p>
             </div>
             <div>
@@ -79,13 +79,13 @@ const Index = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-green-400" />
-                  <span>info@bogurafoodsupply.com</span>
+                  <span>info@healthyspoon.com</span>
                 </div>
               </div>
             </div>
           </div>
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Bogura Food Supply. All rights reserved.</p>
+            <p>&copy; 2024 Healthy Spoon. All rights reserved.</p>
           </div>
         </div>
       </footer>
