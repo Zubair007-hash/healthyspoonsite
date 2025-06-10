@@ -71,8 +71,15 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-lg text-gray-800 mb-2">Our Location</h4>
                     <p className="text-gray-600">
-                      Vai Pagla Mazar Lane<br />
-                      Bogura City, Bangladesh
+                      <a 
+                        href="https://maps.google.com/?q=Vai+Pagla+Mazar+Lane,+Bogura+City,+Bangladesh" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-green-600 transition-colors"
+                      >
+                        Vai Pagla Mazar Lane<br />
+                        Bogura City, Bangladesh
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -86,8 +93,20 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-lg text-gray-800 mb-2">Phone & WhatsApp</h4>
                     <p className="text-gray-600">
-                      01315022084<br />
-                      Available for calls and WhatsApp
+                      <a 
+                        href="tel:+8801315022084" 
+                        className="hover:text-green-600 transition-colors"
+                      >
+                        01315022084
+                      </a><br />
+                      <a 
+                        href="https://wa.me/8801315022084" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-green-600 transition-colors text-sm"
+                      >
+                        Available for calls and WhatsApp
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -101,7 +120,12 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-lg text-gray-800 mb-2">Email</h4>
                     <p className="text-gray-600">
-                      tasmim3550@gmail.com<br />
+                      <a 
+                        href="mailto:tasmim3550@gmail.com" 
+                        className="hover:text-green-600 transition-colors"
+                      >
+                        tasmim3550@gmail.com
+                      </a><br />
                       We'll respond within 24 hours
                     </p>
                   </div>
@@ -148,13 +172,17 @@ const ContactSection = () => {
 
             {/* Quick Contact Buttons */}
             <div className="space-y-4">
-              <Button className="w-full bg-green-600 hover:bg-green-700 text-lg py-6">
-                <Phone className="mr-2 h-5 w-5" />
-                Call Now for Immediate Service
+              <Button asChild className="w-full bg-green-600 hover:bg-green-700 text-lg py-6">
+                <a href="tel:+8801315022084">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call Now for Immediate Service
+                </a>
               </Button>
-              <Button variant="outline" className="w-full border-green-600 text-green-600 hover:bg-green-50 text-lg py-6">
-                <Mail className="mr-2 h-5 w-5" />
-                Get a Free Quote
+              <Button asChild variant="outline" className="w-full border-green-600 text-green-600 hover:bg-green-50 text-lg py-6">
+                <a href="mailto:tasmim3550@gmail.com">
+                  <Mail className="mr-2 h-5 w-5" />
+                  Get a Free Quote
+                </a>
               </Button>
             </div>
           </div>
