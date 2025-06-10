@@ -24,9 +24,11 @@ const Index = () => {
               <a href="#services" className="text-gray-600 hover:text-green-600 transition-colors">Services</a>
               <a href="#contact" className="text-gray-600 hover:text-green-600 transition-colors">Contact</a>
             </div>
-            <Button className="bg-green-600 hover:bg-green-700">
-              <Phone className="h-4 w-4 mr-2" />
-              Call Now
+            <Button asChild className="bg-green-600 hover:bg-green-700">
+              <a href="tel:+8801315022084">
+                <Phone className="h-4 w-4 mr-2" />
+                Call Now
+              </a>
             </Button>
           </div>
         </div>
@@ -71,15 +73,32 @@ const Index = () => {
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4 text-green-400" />
-                  <span>Vai Pagla Mazar Lane, Bogura City</span>
+                  <a 
+                    href="https://maps.google.com/?q=Vai+Pagla+Mazar+Lane,+Bogura+City,+Bangladesh" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-green-400 transition-colors"
+                  >
+                    Vai Pagla Mazar Lane, Bogura City
+                  </a>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4 text-green-400" />
-                  <span>01315022084</span>
+                  <a 
+                    href="tel:+8801315022084" 
+                    className="hover:text-green-400 transition-colors"
+                  >
+                    01315022084
+                  </a>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-green-400" />
-                  <span>tasmim3550@gmail.com</span>
+                  <a 
+                    href="mailto:tasmim3550@gmail.com" 
+                    className="hover:text-green-400 transition-colors"
+                  >
+                    tasmim3550@gmail.com
+                  </a>
                 </div>
               </div>
             </div>
