@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Utensils, Coffee, Soup, Pizza } from "lucide-react";
@@ -13,7 +12,8 @@ const MenuSection = () => {
       items: [
         { name: "Singara (সিঙাড়া)", description: "Classic potato-filled pastry", price: "৳10" },
         { name: "Samucha (সামুচা)", description: "Crispy vegetable pastry", price: "৳10" },
-        { name: "Alur Chop (আলুর চপ)", description: "Spiced potato fritters", price: "৳10" }
+        { name: "Alur Chop (আলুর চপ)", description: "Spiced potato fritters", price: "৳10" },
+        { name: "Puri Plate (2*Puri)", description: "2 puris with free dal or ghati", price: "৳20" }
       ]
     },
     {
@@ -22,9 +22,9 @@ const MenuSection = () => {
       color: "from-red-400 to-red-600",
       badgeColor: "bg-red-100 text-red-800",
       items: [
-        { name: "Fuchka / Chotpoti (ফুচকা / চটপটি)", description: "Traditional street snack", price: "৳50" },
-        { name: "Spicy Fried Chicken", description: "Crispy spiced chicken", price: "৳50" },
-        { name: "Chicken Burger", description: "Delicious chicken burger", price: "৳50" }
+        { name: "Fuchka / Chotpoti (ফুচকা / চটপটি)", description: "Half-৳30, Full-৳40", price: "৳30-40" },
+        { name: "Spicy Fried Chicken", description: "Crispy spiced chicken", price: "৳40" },
+        { name: "Chicken Burger", description: "Delicious chicken burger", price: "৳40" }
       ]
     },
     {
@@ -33,10 +33,10 @@ const MenuSection = () => {
       color: "from-green-400 to-green-600",
       badgeColor: "bg-green-100 text-green-800",
       items: [
-        { name: "Egg Khichuri (ডিম খিচুড়ি)", description: "Comfort rice with egg", price: "৳60" },
+        { name: "Egg Khichuri (ডিম খিচুড়ি)", description: "Comfort rice with egg", price: "৳40" },
         { name: "Lunch Box 1 (Egg)", description: "A comforting bowl of Bhoona Khichuri with a boiled egg", price: "৳60" },
-        { name: "Lunch Box 2 (Veg)", description: "Plain Rice, Daal, two Bhortas, and a Vegetable Bhaji", price: "৳60" },
-        { name: "Mini Biryani (মিনি বিরিয়ানি)", description: "Aromatic rice with chicken", price: "৳80" }
+        { name: "Fried Rice", description: "Delicious vegetable fried rice", price: "৳50" },
+        { name: "Mini Biryani (মিনি বিরিয়ানি)", description: "Aromatic rice with chicken", price: "৳40" }
       ]
     },
     {
