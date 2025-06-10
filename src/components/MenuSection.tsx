@@ -22,7 +22,9 @@ const MenuSection = () => {
       color: "from-red-400 to-red-600",
       badgeColor: "bg-red-100 text-red-800",
       items: [
-        { name: "Fuchka / Chotpoti (ফুচকা / চটপটি)", description: "Traditional street snack", price: "৳40" }
+        { name: "Fuchka / Chotpoti (ফুচকা / চটপটি)", description: "Traditional street snack", price: "৳50" },
+        { name: "Spicy Fried Chicken", description: "Crispy spiced chicken", price: "৳50" },
+        { name: "Chicken Burger", description: "Delicious chicken burger", price: "৳50" }
       ]
     },
     {

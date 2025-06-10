@@ -31,7 +31,7 @@ const ContactSection = () => {
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-700">Phone Number</label>
-                  <Input placeholder="+880 XXX XXX XXX" />
+                  <Input placeholder="+880 1315 022 084" />
                 </div>
               </div>
               <div className="space-y-2">
@@ -71,8 +71,8 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-lg text-gray-800 mb-2">Our Location</h4>
                     <p className="text-gray-600">
-                      Bogura, Rajshahi Division<br />
-                      Bangladesh
+                      Vai Pagla Mazar Lane<br />
+                      Bogura City, Bangladesh
                     </p>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-lg text-gray-800 mb-2">Phone & WhatsApp</h4>
                     <p className="text-gray-600">
-                      +880 XXX XXX XXX<br />
+                      01315022084<br />
                       Available for calls and WhatsApp
                     </p>
                   </div>
@@ -101,7 +101,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-lg text-gray-800 mb-2">Email</h4>
                     <p className="text-gray-600">
-                      info@bogurafoodsupply.com<br />
+                      tasmim3550@gmail.com<br />
                       We'll respond within 24 hours
                     </p>
                   </div>
@@ -124,6 +124,24 @@ const ContactSection = () => {
                       </p>
                     </div>
                   </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Google Maps Embed */}
+            <Card>
+              <CardContent className="p-6">
+                <h4 className="font-semibold text-lg text-gray-800 mb-4">Find Us on Map</h4>
+                <div className="w-full h-64 rounded-lg overflow-hidden">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d325.59368178695166!2d89.37966717060536!3d24.832302285934613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1749564921291!5m2!1sen!2sbd" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
               </CardContent>
             </Card>
