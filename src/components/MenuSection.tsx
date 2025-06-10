@@ -32,8 +32,8 @@ const MenuSection = () => {
       badgeColor: "bg-green-100 text-green-800",
       items: [
         { name: "Egg Khichuri (ডিম খিচুড়ি)", description: "Comfort rice with egg", price: "৳60" },
-        { name: "Lunch Box 1 (Egg)", description: "A comforting bowl of Bhoona Khichuri with a boiled egg.", price: "৳60" },
-        { name: "Lunch Box 2 (Veg)", description: "Plain Rice, Daal, two Bhortas, and a Vegetable Bhaji.", price: "৳60" },
+        { name: "Lunch Box 1 (Egg)", description: "A comforting bowl of Bhoona Khichuri with a boiled egg", price: "৳60" },
+        { name: "Lunch Box 2 (Veg)", description: "Plain Rice, Daal, two Bhortas, and a Vegetable Bhaji", price: "৳60" },
         { name: "Mini Biryani (মিনি বিরিয়ানি)", description: "Aromatic rice with chicken", price: "৳80" }
       ]
     },
@@ -60,35 +60,42 @@ const MenuSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {menuCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-white/80 backdrop-blur-sm border-0">
-                <CardHeader className={`bg-gradient-to-r ${category.color} text-white relative`}>
-                  <div className="flex items-center justify-between">
-                    <IconComponent className="h-8 w-8" />
-                    <Badge className={`${category.badgeColor} border-0`}>
-                      {category.items.length} items
-                    </Badge>
+              <Card key={index} className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white border-0 shadow-lg overflow-hidden">
+                <CardHeader className={`bg-gradient-to-br ${category.color} text-white p-6 relative overflow-hidden`}>
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full -translate-y-10 translate-x-10"></div>
+                  <div className="relative z-10">
+                    <div className="flex items-center justify-between mb-3">
+                      <IconComponent className="h-8 w-8 drop-shadow-lg" />
+                      <Badge className={`${category.badgeColor} border-0 shadow-sm`}>
+                        {category.items.length} items
+                      </Badge>
+                    </div>
+                    <CardTitle className="text-xl font-bold">{category.title}</CardTitle>
                   </div>
-                  <CardTitle className="text-xl font-bold">{category.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="p-6">
-                  <div className="space-y-4">
+                
+                <CardContent className="p-6 bg-gradient-to-b from-white to-gray-50/50">
+                  <div className="space-y-5">
                     {category.items.map((item, itemIndex) => (
-                      <div key={itemIndex} className="group">
-                        <div className="flex justify-between items-start mb-2">
-                          <h4 className="font-semibold text-gray-800 group-hover:text-green-600 transition-colors text-sm leading-tight">
+                      <div key={itemIndex} className="group/item">
+                        <div className="flex justify-between items-start gap-3 mb-2">
+                          <h4 className="font-semibold text-gray-800 group-hover/item:text-green-600 transition-colors duration-300 text-sm leading-tight flex-1">
                             {item.name}
                           </h4>
-                          <Badge variant="secondary" className="bg-green-100 text-green-800 font-bold ml-2 shrink-0">
+                          <Badge 
+                            variant="secondary" 
+                            className="bg-gradient-to-r from-green-100 to-green-200 text-green-800 font-bold border border-green-300 shadow-sm shrink-0"
+                          >
                             {item.price}
                           </Badge>
                         </div>
-                        <p className="text-gray-600 text-xs leading-relaxed">{item.description}</p>
+                        <p className="text-gray-600 text-xs leading-relaxed mb-3">{item.description}</p>
                         {itemIndex < category.items.length - 1 && (
-                          <div className="border-b border-gray-100 mt-3"></div>
+                          <div className="border-b border-gray-200/60"></div>
                         )}
                       </div>
                     ))}
@@ -100,9 +107,9 @@ const MenuSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-green-200">
-            <Utensils className="h-5 w-5 text-green-600" />
-            <span className="text-gray-700 font-medium">All items freshly prepared daily</span>
+          <div className="inline-flex items-center space-x-3 bg-white/90 backdrop-blur-sm px-8 py-4 rounded-full shadow-xl border border-green-200/50">
+            <Utensils className="h-6 w-6 text-green-600" />
+            <span className="text-gray-700 font-semibold text-lg">All items freshly prepared daily</span>
           </div>
         </div>
       </div>
